@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+
+<link href="https://fonts.googleapis.com/css?family=Roboto|Varela+Round" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<title>Contact V4</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--===============================================================================================-->
+	<link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fontsc/font-awesome-4.7.0/css/font-awesome.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/animsition/css/animsition.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/daterangepicker/daterangepicker.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="cssc/util.css">
+	<link rel="stylesheet" type="text/css" href="cssc/main.css">
+<style>
+    body {
+		font-family: 'Varela Round', sans-serif;
+	}
+	.modal-confirm {		
+		color: #636363;
+		width: 325px;
+		margin: 30px auto;
+	}
+	.modal-confirm .modal-content {
+		padding: 20px;
+		border-radius: 5px;
+		border: none;
+	}
+	.modal-confirm .modal-header {
+		border-bottom: none;   
+        position: relative;
+	}
+	.modal-confirm h4 {
+		text-align: center;
+		font-size: 26px;
+		margin: 30px 0 -15px;
+	}
+	.modal-confirm .form-control, .modal-confirm .btn {
+		min-height: 40px;
+		border-radius: 3px; 
+	}
+	.modal-confirm .close {
+        position: absolute;
+		top: -5px;
+		right: -5px;
+	}	
+	.modal-confirm .modal-footer {
+		border: none;
+		text-align: center;
+		border-radius: 5px;
+		font-size: 13px;
+	}	
+	.modal-confirm .icon-box {
+		color: #fff;		
+		position: absolute;
+		margin: 0 auto;
+		left: 0;
+		right: 0;
+		top: -70px;
+		width: 95px;
+		height: 95px;
+		border-radius: 50%;
+		z-index: 9;
+		background: #82ce34;
+		padding: 15px;
+		text-align: center;
+		box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1);
+	}
+	.modal-confirm .icon-box i {
+		font-size: 58px;
+		position: relative;
+		top: 3px;
+	}
+	.modal-confirm.modal-dialog {
+		margin-top: 80px;
+	}
+    .modal-confirm .btn {
+        color: #fff;
+        border-radius: 4px;
+		background: #82ce34;
+		text-decoration: none;
+		transition: all 0.4s;
+        line-height: normal;
+        border: none;
+    }
+	.modal-confirm .btn:hover, .modal-confirm .btn:focus {
+		background: #6fb32b;
+		outline: none;
+	}
+	.trigger-btn {
+		display: inline-block;
+		margin: 100px auto;
+	}
+	.ss{
+		color: red;
+	}
+</style>
+<!--===============================================================================================-->
+</head>
+<body>
+
+
+	<div class="container-contact100">
+		<div class="wrap-contact100">
+			<form class="contact100-form validate-form" id="submit-form" action="">
+				<span class="contact100-form-title">
+					Welcome to Eduway Admission!
+				</span>
+
+
+
+				<div class="wrap-input100 validate-input" data-validate="Name is required">
+					<span class="label-input100">Full Name</span>
+					<input class="input100" type="text" name="name" placeholder="Enter your name">
+					<span class="focus-input100"></span>
+				</div>
+
+				<div class="wrap-input100 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
+					<span class="label-input100">Email</span>
+					<input class="input100" type="text" name="email" placeholder="Email">
+					<span class="focus-input100"></span>
+				</div>
+
+				<div class="wrap-input100 validate-input" data-validate="Place is required">
+					<span class="label-input100">Place</span>
+					<input class="input100" type="text" name="place" placeholder="Enter your place">
+					<span class="focus-input100"></span>
+				</div>
+
+				<div class="wrap-input100 validate-input" data-validate="phone number is required">
+					<span class="label-input100">Phone</span>
+					<input class="input100" type="number" name="phone" placeholder="Phone number">
+					<span class="focus-input100"></span>
+				</div>
+
+				<div class="wrap-input100 input100-select">
+					<span class="label-input100">Select Your Field</span>
+					<div>
+						<select class="selection-2" name="Field">
+							<option>Select Area</option>
+							<option>Agriculture</option>
+							<option>Animation</option>
+							<option>Architecture</option>
+							<option>Arts</option>
+							<option>Aviation</option>
+							<option>Commerce</option>
+							<option>Compuer  Application</option>
+							<option>Dental</option>
+							<option>Design</option>
+							<option>Engineering</option>
+							<option>Hotel Management</option>
+							<option>Law</option>
+							<option>Mass communication</option>
+							<option>Medical</option>
+							<option>Paramedical</option>
+							<option>Pharmacy</option>
+							<option>Science</option>
+							<option>veterinary</option>
+						</select>
+					</div>
+					<span class="focus-input100"></span>
+				</div>
+
+				<div class="wrap-input100 input100-select">
+					<span class="label-input100">Institutions</span>
+					<div>
+						<select class="selection-2" name="institute">
+							<option>Select Institute</option>
+							<option>College of Agriculture Trivandrum</option>
+							<option>Kelappaji College of Agriculture Malappuram</option>
+							<option>Kerala Agricultural University Thrissur</option>
+							<option>Govt College of Agriculture Kottayam</option>
+							<option>Govt College of Agriculture Idukki</option>
+							<option>Bayspro Institute of Animation and VFX
+Kozhikode</option>
+							<option>Toonz Academy of VFX
+Trivandrum</option>
+							<option>Mudmax School of Animation
+Thrissur</option>
+							<option>Arena Animation
+Kochi</option>
+							<option>Pixeltoonz Academy of Animation
+Kochi</option>
+							<option>Vedavyasa College of Architecture
+Malappuram</option>
+							<option>KMCT College of Architecture
+Manassery</option>
+						  <option>MES College of Architecture
+Kozhikode</option>
+							<option>Thejus College of Architecture
+Vellarkad
+</option>
+							<option>Eranad Knowledge City College of Architecture
+Cherukulam
+</option>
+							<option>KMM College of Arts and Science
+Kochi</option>
+							<option>MES Arts and Science COllege
+Perintalmanna</option>
+							<option>Govt Arts and Science College
+Kozhikode</option>
+							<option>Jamia Nadwiyya Arts and science college
+Edavanna
+</option>
+							<option>Royal Arts and Science college
+Thrithala</option>
+							<option>Mennen Aviation Academy
+Palakkad</option>
+							<option>Jawaharlal Aviation Institute
+Ottapalam</option>
+							<option>Flying Goose Aviation Academy
+Kozhikode</option>
+							<option>Speed Wings Aviation Academy
+Calicut</option>
+							<option>Patriot Aviation College
+Thrissur</option>
+							<option>IAM Business School of Commerce
+Malappuram
+</option>
+							<option>Yuvan Education of Commerce
+Ernakulam</option>
+							<option>Bharadwaj Institute of Commerce
+Kozhikode
+</option>
+							<option>Inprox Institute of Commerce
+Cochin</option>
+							<option>Commerce Campus
+Kozhikode</option>
+							<option>Cambiar College of Computer Education
+Nilambur</option>
+							<option>ECIT Computer College
+Chemmad</option>
+							<option>ISIT Computer College
+Tirur</option>
+							<option>Saintgits Institute of Computer Applications
+Kochi</option>
+							<option>Aptech Computer Education
+Manjeri</option>
+							<option>Govt Dental College
+Kozhikode</option>
+							<option>KMCT Dental College
+Kozhikode
+</option>
+							<option>Royal Dental College
+Palakkad</option>
+							<option>PMS College of Dental Science and Research
+Trivandrum</option>
+							<option>Educare Institute of Dental Sciences
+Malappuram</option>
+							<option>Malabar Institute of Fashion Technology
+Manjeri</option>
+							<option>National Institute of Fashion Technology
+Kannur</option>
+							<option>Cinderlay Institute of Design
+Kozhikode
+</option>
+							<option>Cubatic College of Interior Designing,
+Edappal</option>
+							<option>Impasto College of Interior Design,
+Manjeri</option>
+							<option>Govt Engineering College Thrissur</option>
+							<option>Model Engineering College Kochi </option>
+							<option>Govt Engineering College Kozhikode</option>
+							<option>MES Engineering College Kuttippuram</option>
+							<option>NSS Engineering College Palakkad</option>
+							<option>Oriental School of Hotel Management
+Lakkidi
+</option>
+							<option>Face Institute of Hotel Management
+Kozhikode</option>
+							<option>JDT Institute of Hotel Management
+Kozhikode</option>
+							<option>Good Shepherd College of Hotel Management
+Ottappalam</option>
+							<option>Continental Institute of Hotel Management
+Palakkad</option>
+							<option>Govt Law College
+Kozhikode</option>
+							<option>KMCT Law College
+Kuttippuram</option>
+							<option>Nehru Academy of Law
+Lakkidi</option>
+							<option>CSI Institute of Legal Studies
+Cheruvarakonam
+</option>
+							<option>Govt Law College
+Thrissur</option>
+							<option>Christ College of Mass Communication
+Irinjalakkuda</option>
+							<option>Sacred Heart College of Mass Communication
+Ernakulam</option>
+							<option>SCMS School of Mass Communication Studies
+Cochin</option>
+							<option>St Teresa's College of Mass Communication
+Kozhikode</option>
+							<option>Don Bosco Institute of Mass Communication
+Kannur</option>
+							<option>Govt Medical college
+Trivandrum</option>
+							<option>Govt Medical college
+Kozhikode</option>
+							<option>Govt Medical college
+Kottayam</option>
+							<option>Amrita Institute of Medical Sciences
+Kochi</option>
+							<option>Malabar Medical college
+Kozhikode</option>
+							<option>EMS College of Paramedical Science
+Perinthalmanna</option>
+							<option>Medi Tech Paramedical College
+Kondotty</option>
+							<option>Institute of Paramedical Sciences
+Kannur</option>
+							<option>MES Paramedical Institute
+Vellarkad</option>
+							<option>KVM Institute of Paramedical Sciences
+Cherthala
+</option>
+							<option>National College of Pharmacy
+Kozhikode</option>
+							<option>Kerala University of Health Science
+Thrissur</option>
+							<option>Crescent College of Pharmacy
+Pazhayangadi</option>
+							<option>Pushpagiri College of Pharmacy
+Thiruvalla</option>
+							<option>Grace College of Pharmacy
+Palakkad</option>
+							<option>College of Veterinary and Animal Sciences
+Thrissur</option>
+							<option>College of Veterinary and Animal Sciences
+Wayanad</option>
+							<option>Govt Veterinary college
+Kottayam
+</option>
+							<option>Govt Veterinary College
+Ernakulam</option>
+							<option>Govt Veterinary college
+Malappuram</option>
+
+						</select>
+					</div>
+					<span class="focus-input100"></span>
+				</div>
+
+
+				<div class="wrap-input100 input100-select">
+					<span class="label-input100">Courses</span>
+					<div>
+						<select class="selection-2" name="course">
+							<option>Choose Courses</option>
+							<option>B.Tech Agricultural and Food Engineering</option>
+							<option>B.Sc in Dairy Science</option>
+							<option>B.Sc in Plant Science</option>
+							<option>Gaming</option>
+							<option>VFX</option>
+							<option>Animation</option>
+							<option>Animation Film Making</option>
+							<option>Film and Media Design
+</option>
+							<option>B.Arch</option>
+							<option>B.Sc Aviation</option>
+							<option>BBA in Airport Management</option>
+							<option>Aircraft Maintenance Engineering</option>
+							<option>Aeronautical Engineering</option>
+							<option>Diploma in Aviation Hospitality
+</option>
+							<option>CA</option>
+							<option>ACCA</option>
+							<option>CMA</option>
+							<option>BCA</option>
+							<option>Computer Engineering</option>
+							<option>Data Science</option>
+							<option>Web Designing</option>
+							<option>Bachelors in Dental Surgery</option>
+							<option>Masters in Dental surgery
+</option>
+							<option>Advanced Diploma in Fashion Design and Management</option>
+							<option>M.Design in Fashion and Textiles
+</option>
+							<option>B.Des in Fashion Designing</option>
+							<option>B.Des in Jewellery</option>
+							<option>B.Des in Textile Design</option>
+							<option>Interior Designing</option>
+							<option>Mechanical Engineering</option>
+							<option>Electronics and Communication Engineering</option>
+							<option>Civil Engineering</option>
+							<option>Chemical Engineering</option>
+							<option>Product Engineering</option>
+							<option>Electonic Engineering</option>
+							<option>Computer Science Engineering</option>
+							<option>Bachelor of Hotel Management</option>
+							<option>B.sc Hotel Management and Catering Science</option>
+							<option>Bachelor of Hotel Administration</option>
+							<option>Master of Hotel Management</option>
+							<option>Bachelor of Legislative Law</option>
+							<option>Diploma in Criminal Law</option>
+							<option>Diploma in Business Law</option>
+							<option>Diploma in Criminology</option>
+							<option>Diploma in Cyber Law
+</option>
+							<option>BMC</option>
+              <option>MMC</option>
+              <option>Medical and Allied Sciences</option>
+              <option>Diploma in Ophtalmic Assistance</option>
+							<option>Diploma in Radiological Technology
+</option>
+							<option>Diploma in Medical Laboratory Technology
+</option>
+							<option>B.Pharma</option>
+							<option>M.Pharma</option>
+							<option>B.V.Sc</option>
+							<option> A.H</option>
+							<option>MVSc</option>
+						</select>
+					</div>
+					<span class="focus-input100"></span>
+				</div>
+
+
+
+
+
+                <div>
+
+			<center><button type="submit" name="login" class="btn btn-success btn-labeled pull-center" href="#myModal" class="trigger-btn" data-toggle="modal"><b>Submit<span class="btn-label btn-label-right"><i class="fa fa-check"></i></span></button>
+				</div>
+
+			</form>
+		</div>
+
+	</div>
+	<div id="myModal" class="modal fade">
+	<div class="modal-dialog modal-confirm">
+		<div class="modal-content">
+			<div class="modal-header">
+				<div class="icon-box">
+					<i class="material-icons">&#xE876;</i>
+				</div>				
+				<h4 class="modal-title">Successfully!</h4>	
+			</div>
+			<div class="modal-body">
+				<p class="text-center">Your Application is successfully Registered.</p><br>
+				<center><p class="ss">Refreshing page...</p></center>
+			</div>
+			<div class="modal-footer">
+				<button class="btn btn-success btn-block" data-dismiss="modal">OK</button>
+			</div>
+		</div>
+	</div>
+</div>     
+	<marquee><p class="helo">Don't press back after submit, please wait for the process Done  </p></marquee>
+
+
+<script>
+	$("#submit-form").submit((e)=>{
+		e.preventDefault()
+		$.ajax({
+			url:"https://script.google.com/macros/s/AKfycbz6uWSR2v5lkUm2z17msUrRVXXsOghh4RqBN2qqgobwv7J52kT_odPC/exec",
+			data:$("#submit-form").serialize(),
+			method:"post",
+			success:function (response){
+				//alert("Form submitted successfully")
+               window.location.reload()
+				//window.location.href="https://google.com"
+			},
+			error:function (err){
+				alert("Something Error")
+
+			}
+		})
+	})
+</script>
+
+
+
+
+
+
+
+
+
+	<div id="dropDownSelect1"></div>
+
+<!--===============================================================================================-->
+	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/animsition/js/animsition.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/bootstrap/js/popper.js"></script>
+	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/select2/select2.min.js"></script>
+	<script>
+		$(".selection-2").select2({
+			minimumResultsForSearch: 20,
+			dropdownParent: $('#dropDownSelect1')
+		});
+	</script>
+<!--===============================================================================================-->
+	<script src="vendor/daterangepicker/moment.min.js"></script>
+	<script src="vendor/daterangepicker/daterangepicker.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/countdowntime/countdowntime.js"></script>
+<!--===============================================================================================-->
+	<script src="jsc/main.js"></script>
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-23581568-13');
+</script>
+
+
+</body>
+</html>

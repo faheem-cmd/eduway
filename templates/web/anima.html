@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	{% load static %}
+	<script>
+function goBack() {
+  window.history.back();
+}
+</script>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>EstateAgency Bootstrap Template - Index</title>
+  <meta content="" name="descriptison">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="{% static 'assetq/img/favicon.png' %}" rel="icon">
+  <link href="{% static 'assetq/img/apple-touch-icon.png' %}" rel="apple-touch-icon">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="{% static 'assetq/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assetq/vendor/ionicons/css/ionicons.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assetq/vendor/animate.css/animate.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assetq/vendor/font-awesome/css/font-awesome.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assetq/vendor/owl.carousel/assets/owl.carousel.min.css' %}" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="{% static 'assetq/css/style.css' %}" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: EstateAgency - v2.1.0
+  * Template URL: https://bootstrapmade.com/real-estate-agency-bootstrap-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+  <!-- ======= Property Search Section ======= -->
+
+
+  <!-- ======= Header/Navbar ======= -->
+
+<button class="btn" onclick="goBack()"><i class="fa fa-arrow-circle-left" ></i></button>
+  <main id="main">
+
+    <!-- ======= Intro Single ======= -->
+    <section class="intro-single">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 col-lg-8">
+            <div class="title-single-box">
+              <h1 class="title-single">Animation in Kerala</h1>
+              <span class="color-text-a">Colleges</span>
+            </div>
+          </div>
+          <div class="col-md-12 col-lg-4">
+            <nav aria-label="breadcrumb" class="breadcrumb-box d-flex justify-content-lg-end">
+              <ol class="breadcrumb">
+
+
+              </ol>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </section><!-- End Intro Single-->
+
+    
+   <!-- =======  Blog Grid ======= -->
+
+    <section class="news-grid grid">
+      <div class="container">
+        <div class="row">
+     
+          <div class="col-md-4">
+           <div class="card-box-b card-shadow news-box" onclick="location.href='https://www.google.com/';">
+              <div class="img-box-b">
+                <img src="https://i.pinimg.com/originals/4a/31/bf/4a31bfab58bd9d7f36db695d011b2d7e.jpg" alt="" class="img-b img-fluid">
+              </div></a>
+              <div class="card-overlay">
+                <div class="card-header-b">
+                  <div class="card-category-b">
+                    <a href="Tel:75559913558" class="category-b" style="color: white" ><i class="fa fa-phone" aria-hidden="true"></i> call</a>
+                    <a href="https://faheem-cmd.github.io/pdf/z.pdf" class="category-b"  style="color: white">Brochure <i class="fa fa-download"></i></a>
+                  </div>
+                  <div class="card-title-b">
+                    <h2 class="title-2">
+                      <a>Bayspro Institute of Animation and VFX
+                        <br>Kozhikode</a>
+                    </h2>
+                  </div>
+                  <div class="card-date">
+                    <span class="date-b">
+                    	Gaming,VFX<br>Animation<br></span>
+                  </div>
+                  <br/>
+                  <br/><a href="https://faheem-cmd.github.io/admission_eduway/">
+                  <button class="button button2" >Apply Now</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          {% for ff in animation_datas %}
+          <div class="col-md-4">
+            <div class="card-box-b card-shadow news-box" onclick="location.href='{{ff.website}}';">
+              <div class="img-box-b">
+                <img src="{{ff.image.url}}" alt="" class="img-b img-fluid">
+              </div>
+              <div class="card-overlay">
+                <div class="card-header-b">
+                  <div class="card-category-b">
+                   <a href="Tel:{{ff.phone}}" class="category-b" style="color: white" ><i class="fa fa-phone" aria-hidden="true"></i> call</a>
+                    <a href="blog-single.html" class="category-b"  style="color: white">Brochure <i class="fa fa-download"></i></a>
+                  </div>
+                  <div class="card-title-b">
+                    <h2 class="title-2">
+                      <a>{{ff.title}}</a>
+                    </h2>
+                  </div>
+                  <div class="card-date">
+                    <span class="date-b">{{ff.courses}} <br></span>
+                  </div>
+                  <br><a href="https://faheem-cmd.github.io/admission_eduway/">
+                   <button class="button button2" >Apply Now</button>
+                </div>
+              </div>
+            </div>
+          </div>
+           {% endfor %}
+          <div class="col-md-4">
+            <div class="card-box-b card-shadow news-box" onclick="location.href='https://www.google.com/';">
+              <div class="img-box-b">
+                <img src="https://i.pinimg.com/originals/bc/0d/62/bc0d62a843704e32d86f1e2fee01917d.jpg" alt="" class="img-b img-fluid">
+              </div>
+              <div class="card-overlay">
+                <div class="card-header-b">
+                  <div class="card-category-b">
+                    <a href="Tel:75559913558" class="category-b" style="color: white" ><i class="fa fa-phone" aria-hidden="true"></i> call</a>
+                    <a href="#" class="category-b"  style="color: white">Brochure <i class="fa fa-download"></i></a>
+                  </div>
+                  <div class="card-title-b">
+                    <h2 class="title-2">
+                      <a>Mudmax School
+                        <br>Thrissur</a>
+                    </h2>
+                  </div>
+                  <div class="card-date">
+                    <span class="date-b">Gaming,VFX<br>Animation Film Making<br></span>
+                  </div>
+                  <br/><a href="https://faheem-cmd.github.io/admission_eduway/">
+                  <button class="button button2" >Apply Now</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card-box-b card-shadow news-box">
+              <div class="img-box-b">
+                <img src="https://i.pinimg.com/originals/c3/5f/1b/c35f1b6704b24e6c86a667db023962f6.jpg" alt="" class="img-b img-fluid">
+              </div>
+              <div class="card-overlay">
+                <div class="card-header-b">
+                  <div class="card-category-b">
+                    <a href="Tel:75559913558" class="category-b" style="color: white" ><i class="fa fa-phone" aria-hidden="true"></i> call</a>
+                    <a href="#" class="category-b"  style="color: white">Brochure <i class="fa fa-download"></i></a>
+                  </div>
+                  <div class="card-title-b">
+                    <h2 class="title-2">
+                      <a>Arena Animation
+                        <br>Kochi</a>
+                    </h2>
+                  </div>
+                  <div class="card-date">
+                    <span class="date-b"> <br>Animation Film Making,<br>VFX</span>
+                  </div>
+                <br/><a href="https://faheem-cmd.github.io/admission_eduway/">
+                  <button class="button button2" >Apply Now</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card-box-b card-shadow news-box">
+              <div class="img-box-b">
+                <img src="https://i.pinimg.com/originals/b5/a2/62/b5a2628c161fa52c195b43ef117637b6.jpg" alt="" class="img-b img-fluid">
+              </div>
+              <div class="card-overlay">
+                <div class="card-header-b">
+                  <div class="card-category-b">
+                    <a href="Tel:75559913558" class="category-b" style="color: white" ><i class="fa fa-phone" aria-hidden="true"></i> call</a>
+                    <a href="#" class="category-b"  style="color: white">Brochure <i class="fa fa-download"></i></a>
+                  </div>
+                  <div class="card-title-b">
+                    <h2 class="title-2">
+                      <a>Pixeltoonz Academy
+                        <br>Kochi</a>
+                    </h2>
+                  </div>
+                  <div class="card-date">
+                    <span class="date-b"> <br>VFX<br>Animation,Film and Media Design</span>
+                    <span class="date-b"><br><br></span>
+                  </div>
+                <br/><a href="https://faheem-cmd.github.io/admission_eduway/">
+                  <button class="button button2" >Apply Now</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12">
+            <nav class="pagination-a">
+              <ul class="pagination justify-content-end">
+                <li class="page-item disabled">
+                  <a class="page-link" href="#" tabindex="-1">
+                    <span class="ion-ios-arrow-back"></span>
+                  </a>
+                </li>
+                <li class="page-item">
+                  <a class="page-link" href="#">1</a>
+                </li>
+                <li class="page-item">
+                  <a class="page-link" href="#">2</a>
+                </li>
+                <li class="page-item">
+                  <a class="page-link" href="#">3</a>
+                </li>
+                <li class="page-item next">
+                  <a class="page-link" href="#">
+                    <span class="ion-ios-arrow-forward"></span>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </section><!-- End Blog Grid-->
+
+  </main><!-- End #main -->
+  <br/>
+
+  <!-- ======= Footer ======= -->
+  <footer class="footer-section">
+        <div class="container">
+            <div class="footer-cta pt-5 pb-5">
+                <div class="row">
+                    <div class="col-xl-4 col-md-4 mb-30">
+                        <div class="single-cta">
+                            <i class="fa fa-map-marker-alt"></i>
+                            <div class="cta-text">
+                                <h4>Find us</h4>
+                                <span>Jamia nadwiyya arts and science college, Edavana</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-md-4 mb-30">
+                        <div class="single-cta">
+                            <i class="fa fa-phone"></i>
+                            <div class="cta-text">
+                                <h4>Call us</h4>
+                                <span> <a href="Tel:7560908331" style="color: #fff";>7560908331</a></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-md-4 mb-30">
+                        <div class="single-cta">
+                            <i class="fa fa-envelope-open"></i>
+                            <div class="cta-text">
+                                <h4>Mail us</h4>
+                                <span>mail@info.com</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-content pt-5 pb-5">
+                <div class="row">
+                    <div class="col-xl-4 col-lg-4 mb-50">
+                        <div class="footer-widget">
+                            <div class="footer-logo">
+                                <a href="index.html"><img src="https://i.pinimg.com/originals/bd/0b/1a/bd0b1af945621599537a67f3b71a3af0.png" class="img-fluid" alt="logo"></a>
+                            </div>
+                            <div class="footer-text">
+                                <p>Eduway is an educational web portal and Mobile application, providing information on colleges and courses in kerala.it is an extensive search engine for the students, parents, and education industry players who are seeking information on higher education sector in kerala.</p>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-6 mb-30">
+                        <div class="footer-widget">
+                            <div class="footer-widget-heading">
+                                <h3>Useful Links</h3>
+                            </div>
+                            <ul>
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="#about">About</a></li>
+                                <li><a href="#">Contact us</a></li>
+                                <li><a href="#">Find best college</a></li>
+                                <li><a href="#courses">Graducation</a></li>
+                                <li><a href="#Quotes">Quotes</a></li>
+                                <li><a href="team\team.html">Expert Team</a></li>
+                                <li><a href="#">Mail us</a></li>
+                                <li><a href="#">What people say</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-6 mb-50">
+                        <div class="footer-widget">
+                            <div class="footer-widget-heading">
+                                <h3>Subscribe</h3>
+                            </div>
+                            <div class="footer-text mb-25">
+                                <p>Don’t miss to subscribe to our new feeds, kindly fill the form below.</p>
+                            </div>
+                            <div class="subscribe-form">
+                                <form action="#">
+                                    <input type="text" placeholder="Email Address">
+                                    <button><i class="fa fa-telegram"></i></button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-6 col-lg-6 text-center text-lg-left">
+                        <div class="copyright-text">
+                            <p>Copyright &copy; 2021, All Right Reserved <a href="index.html">Eduway</a></p>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-6 d-none d-lg-block text-right">
+                        <div class="footer-menu">
+                            <ul>
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">Terms</a></li>
+                                <li><a href="#">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+  <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="{% static 'assetq/vendor/jquery/jquery.min.js' %}"></script>
+  <script src="{% static 'assetq/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+  <script src="{% static 'assetq/vendor/jquery.easing/jquery.easing.min.js' %}"></script>
+  <script src="{% static 'assetq/vendor/php-email-form/validate.js' %}"></script>
+  <script src="{% static 'assetq/vendor/owl.carousel/owl.carousel.min.js' %}"></script>
+  <script src="{% static 'assetq/vendor/scrollreveal/scrollreveal.min.js' %}"></script>
+
+  <!-- Template Main JS File -->
+  <script src="{% static 'assetq/js/main.js' %}"></script>
+
+</body>
+
+</html>

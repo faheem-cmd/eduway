@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap Elegant Success Modal</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto|Varela+Round" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <title>Document</title>
+
+
+   
+	
+
+
+
+</head>
+<body>
+    <div class="container">
+        <div style="text-align:center">
+          <h2><b>Send Your Institute Details</h2>
+          <p>we will contact you after verifying your given details:</p>
+        </div>
+        <div class="row">
+
+          <div class="column">
+            <form id="submit-form" action="">
+              <label for="fname" style="color: orange;">Institute Name</label>
+              <input type="text" id="fname" name="Institute Name" placeholder="Your Institute Name..">
+              <label for="lname" style="color: orange;">Contact</label>
+              <input type="text" id="lname" name="Contact" placeholder="Phone">
+              <label for="fname" style="color: orange;">Location</label>
+              <input type="text" id="fname" name="Location" placeholder="Location">
+              <label for="country" style="color: orange;"></label>
+              
+              <div class="ww">
+
+             
+              <input type="checkbox" id="vehicle2" name="Course Section" value="Engineering">
+              <label for="vehicle2"> Engineering</label><br>
+              <input type="checkbox" id="vehicle3" name="Course Section" value="Medical">
+              <label for="vehicle3"> Medical</label><br>
+              <input type="checkbox" id="vehicle3" name="Course Section" value="Architecture">
+              <label for="vehicle3"> Architecture</label><br>
+              <input type="checkbox" id="vehicle3" name="Course Section" value="Science">
+              <label for="vehicle3"> Science </label><br>
+              <input type="checkbox" id="vehicle3" name="Course Section" value="Arts">
+              <label for="vehicle3"> Arts</label><br>
+              <input type="checkbox" id="vehicle3" name="Course Section" value="Commerce">
+              <label for="vehicle3"> Commerce</label><br>
+              <input type="checkbox" id="vehicle3" name="Course Section" value="Computer App">
+              <label for="vehicle3"> Computer App's</label><br>
+              <input type="checkbox" id="vehicle3" name="Course Section" value="Mass Comm's">
+              <label for="vehicle3"> Mass Comm's</label><br>
+              <input type="checkbox" id="vehicle3" name="Course Section" value="Hotel Management">
+              <label for="vehicle3">Hotel Management</label><br></div>
+              
+             <div class="qq">
+              <input  type="checkbox" id="vehicle1" name="Course Section" value="Pharmacy">
+              <label for="vehicle1">Pharmacy</label><br>
+              <input type="checkbox" id="vehicle2" name="Course Section" value="Paramedical">
+              <label for="vehicle2"> Paramedical</label><br>
+              <input type="checkbox" id="vehicle3" name="Course Section" value="Dental">
+              <label for="vehicle3"> Dental</label><br>
+              <input type="checkbox" id="vehicle3" name="Course Section" value="Law">
+              <label for="vehicle3"> Law</label><br>
+              <input type="checkbox" id="vehicle3" name="Course Section" value="Aviation">
+              <label for="vehicle3"> Aviation</label><br>
+              <input type="checkbox" id="vehicle3" name="Course Section" value="Animation">
+              <label for="vehicle3"> Animation</label><br>
+              <input type="checkbox" id="vehicle3" name="Course Section" value="Agriculture">
+              <label for="vehicle3"> Agriculture</label><br>
+              <input type="checkbox" id="vehicle3" name="Course Section" value="Veterinary">
+              <label for="vehicle3"> Veterinary</label><br>
+              <input type="checkbox" id="vehicle3" name="Course Section" value="Design">
+              <label for="vehicle3"> Design</label><br></div>
+            </select>
+              <label for="subject" style="color: orange;">More about info:</label>
+              <textarea id="subject" name="message" placeholder="Write something about facilities" style="height:170px"></textarea>
+              <input type="submit" value="Submit" a href="#myModal" class="trigger-btn" data-toggle="modal">
+              
+<div id="myModal" class="modal fade">
+	<div class="modal-dialog modal-confirm">
+		<div class="modal-content">
+			<div class="modal-header">
+				<div class="icon-box">
+					<i class="material-icons">&#xE876;</i>
+				</div>
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+			</div>
+			<div class="modal-body text-center">
+				<h4>Succesful!</h4>	
+				<p>Your institute data has been uploaded successfully.</p>
+				<button class="btn btn-success" data-dismiss="modal"><span>Done</span> <i class="material-icons">&#xE5C8;</i></button>
+			</div>
+		</div>
+	</div>
+</div>     
+            </form>
+          </div>
+          <div class="column">
+            <img src="" style="width:100%">
+          </div>
+        </div>
+      </div>
+
+
+      <script>
+        $("#submit-form").submit((e)=>{
+            e.preventDefault()
+            $.ajax({
+                url:"https://script.google.com/macros/s/AKfycbygkmsXV4U-hCLsqjWnaLCfVG5hujHvna-ceZvKd8Z7XSnJn1Fb5WxE4A/exec",
+                data:$("#submit-form").serialize(),
+                method:"post",
+                success:function (response){
+                   // alert("Form submitted successfully")
+                    window.location.reload()
+                    //window.location.href="https://google.com"
+                },
+                error:function (err){
+                    alert("Something Error")
+
+                }
+            })
+        })
+    </script>
+
+
+
+</body>
+
+
+</html>

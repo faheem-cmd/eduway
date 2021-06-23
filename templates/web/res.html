@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Resources</title>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
+.w3-sidebar {
+  z-index: 3;
+  width: 250px;
+  top: 43px;
+  bottom: 0;
+  height: inherit;
+}
+.bottom{
+  background-color:#d4a81e;
+  padding: 20px; 
+}
+.bar{
+    background-color: #095a83;
+    padding: 20px;
+}
+.co{
+	color: red;
+}
+.hello{
+	font-size: 18px;
+	color: blue;
+}
+
+
+
+</style>
+	<script>
+function goBack() {
+  window.history.back();
+}
+</script>
+<body>
+
+
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="bar">
+
+   <button class="btn" onclick="goBack()"><i class="fa fa-arrow-circle-left" ></i></button>
+ 
+  </div>
+</div>
+
+
+<!-- Overlay effect when opening sidebar on small screens -->
+
+  <div class="w3-row w3-padding-64">
+    <div class="w3-twothird w3-container"><
+      <a href="https://www.keralapsc.gov.in/"><h3 class="co">PSC Examination</h3></a>
+      <p class="hello">PSC in India was mandated to assist the respective state government in matters of recruitment, transfers, and disciplinary actions. The state public service commission is responsible to conduct recruitment exams (PSC Exams) that act as an entry point for services in the state administration</p>
+    </div>
+  </div>
+
+ {% for oo in resource_datas %}
+  <div class="w3-row">
+    <div class="w3-twothird w3-container">
+     <a href="{{oo.website}}"><h3 class="co">{{oo.title}}</h3></a>
+      <p class="hello">{{oo.content}}</p>
+    </div>
+  </div>
+  {% endfor %}
+
+  <div class="w3-row w3-padding-64">
+    <div class="w3-twothird w3-container">
+      <a href="https://www.upsc.gov.in/"><h3 class="w3-text-teal">Defence Examination</h3></a>
+      <p>A career in defence forces promises one of the most prestigious and respected positions in the country. ... The various paramilitary organisations and various inter-service institutions also help the Indian Armed Forces. The Ministry of Defence is responsible for the management of armed forces in India.</p>
+        <ul>
+          <li>UPSC NDA & NA.</li>
+          <li>UPSC CDS (Combined Defence Services)</li>
+          <li> UPSC CAPF (Central Armed Police Forces)</li>
+          <li>AFCAT (Air Force Common Admission Test)</li>
+          <li>Indian Air Force (IAF)</li>
+          <li>Indian Coast Guard (ICG)</li>
+        </ul>
+    </div>
+  </div>
+   <div class="w3-row">
+    <div class="w3-twothird w3-container">
+      <a href="https://icaiexam.icai.org/"><h3 class="w3-text-teal">ICAI Exam</h3></a>
+      <p>
+          ICAI Exam (CA Examination) ICAI (Institute of Chartered Accountants India Exam) is an exam conducted by the Institute of Chartered Accountants of India, which is the national professional body accounting body of India to issue a certification about who is eligible to be a professional auditor in Indian..</p>
+    </div>
+  </div>
+     <div class="w3-row">
+    <div class="w3-twothird w3-container">
+      <a href="https://www.cucetexam.in/"><h3 class="w3-text-teal">Central university Examination</h3></a>
+      <p>
+         The Central Universities Common Entrance Test is an all-India test is being organized for admission to various Integrated/Under-Graduate, Post Graduate and Research Programmes in several Central Universities and State Universities of India.</p>
+    </div>
+  </div>
+
+  <footer id="myFooter">
+    <div class="bottom">
+      <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">Eduway</a></p>
+    </div>
+  </footer>
+
+<!-- END MAIN -->
+</div>
+
+<script>
+// Get the Sidebar
+var mySidebar = document.getElementById("mySidebar");
+
+// Get the DIV with overlay effect
+var overlayBg = document.getElementById("myOverlay");
+
+// Toggle between showing and hiding the sidebar, and add overlay effect
+function w3_open() {
+  if (mySidebar.style.display === 'block') {
+    mySidebar.style.display = 'none';
+    overlayBg.style.display = "none";
+  } else {
+    mySidebar.style.display = 'block';
+    overlayBg.style.display = "block";
+  }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+  mySidebar.style.display = "none";
+  overlayBg.style.display = "none";
+}
+</script>
+
+</body>
+</html>

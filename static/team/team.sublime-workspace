@@ -1,0 +1,316 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"co",
+				"courses"
+			],
+			[
+				"q",
+				"Quotes"
+			],
+			[
+				"i",
+				"image"
+			],
+			[
+				"al",
+				"alt\tAttr"
+			],
+			[
+				"fon",
+				"font-weight\tproperty"
+			],
+			[
+				"tr",
+				"transition\tproperty"
+			],
+			[
+				"re",
+				"required\tAttr"
+			],
+			[
+				"id",
+				"id_number"
+			],
+			[
+				"id_",
+				"id_email"
+			],
+			[
+				"ac",
+				"action\tAttr"
+			],
+			[
+				"inl",
+				"inline-block\tdisplay"
+			],
+			[
+				"ce",
+				"center"
+			],
+			[
+				"back",
+				"background\tproperty"
+			],
+			[
+				"bac",
+				"background\tproperty"
+			],
+			[
+				"backc",
+				"background-color\tproperty"
+			],
+			[
+				"bordercol",
+				"border-collapse\tproperty"
+			],
+			[
+				"font",
+				"font-size\tproperty"
+			],
+			[
+				"textal",
+				"text-align\tproperty"
+			],
+			[
+				"cel",
+				"cellspacing\tAttr"
+			],
+			[
+				"alig",
+				"text-align\tproperty"
+			],
+			[
+				"tra",
+				"transform\tproperty"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 157.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/wamp/www/perfect-learn mater/team/team.html",
+		"/C/wamp/www/perfect-learn mater/team/cssteam/style.css",
+		"/C/Users/Amjad/Desktop/team/about.html",
+		"/C/wamp/www/perfect-learn mater/index.html",
+		"/C/wamp/www/perfect-learn mater/team/cssteam/bootstrap.min.css",
+		"/C/Users/Amjad/Downloads/team/about.html",
+		"/C/Users/Amjad/Desktop/perfect-learn/css/style.css",
+		"/C/wamp/www/perfect-learn mater/contact.html",
+		"/C/wamp/www/perfect-learn mater/css/style.css",
+		"/C/Users/Amjad/Desktop/perfect-learn/index.html",
+		"/C/wamp/www/gri/blog-grid.html",
+		"/C/Users/Amjad/Desktop/gri/gri/blog-grid.html",
+		"/C/Users/Amjad/Desktop/project/assignment.html",
+		"/C/Users/Amjad/Desktop/project/index.html",
+		"/C/Users/Amjad/Desktop/project/style.css",
+		"/C/Users/Amjad/Desktop/project/article.html",
+		"/C/Users/Amjad/Desktop/project/sty.css",
+		"/C/Users/Amjad/Desktop/project/work.html",
+		"/C/Users/Amjad/Desktop/gri/gri/assets/css/style.css",
+		"/C/wamp/www/perfect-learn/index.html",
+		"/C/Users/Amjad/Desktop/project/Eduway.html",
+		"/C/Users/Amjad/Desktop/project/design.css",
+		"/C/wamp/www/awesome/index.html",
+		"/C/wamp/www/awesome/css/style.css",
+		"/C/Users/Amjad/Desktop/project/eduway.com",
+		"/C/Users/Amjad/Desktop/project/studentsform.html",
+		"/C/Users/Amjad/Desktop/project/table.html",
+		"/C/Users/Amjad/Desktop/New folder (2)/elephant.html",
+		"/C/Users/Amjad/Desktop/New folder (2)/profilewebsite.html",
+		"/C/Users/Amjad/Desktop/profilewebsite.html",
+		"/C/Users/Amjad/Desktop/my portfolio.html",
+		"/C/Users/Amjad/Desktop/akshay monus/intex.html",
+		"/C/Users/Amjad/Desktop/akshay monus/style.css",
+		"/C/Users/Amjad/Documents/html table.html",
+		"/C/Users/Amjad/Desktop/gsm",
+		"/C/Users/Amjad/Desktop/fahi/faheem.html",
+		"/C/Users/Amjad/Desktop/fahi/style.css",
+		"/C/Users/Amjad/Desktop/fahi/style waves.css",
+		"/C/Users/Amjad/Desktop/fahi/waves.html",
+		"/C/Users/Amjad/Desktop/fahi/faheem,html",
+		"/C/Users/Amjad/OneDrive/Documents/style.css",
+		"/C/Users/Amjad/OneDrive/Documents/faheem.html",
+		"/C/Users/Amjad/Desktop/workfilie/my style.css",
+		"/C/Users/Amjad/Desktop/workfilie/EXTERNAL STYLE SHEET.html",
+		"/C/Users/Amjad/Desktop/workfilie/html Image.html",
+		"/C/Users/Amjad/Desktop/workfilie/Photo album.html",
+		"/C/Users/Amjad/Desktop/workfilie/inline frame.html",
+		"/C/Users/Amjad/Desktop/workfilie/css style sheet.html",
+		"/C/Users/Amjad/Desktop/workfilie/college webpage.html",
+		"/C/Users/Amjad/Desktop/workfilie/user register.html",
+		"/C/Users/Amjad/Desktop/workfilie/images.html",
+		"/C/Users/Amjad/Desktop/workfilie/webpage using link.html",
+		"/C/Users/Amjad/Desktop/workfilie/HTML TABLE.HTML",
+		"/C/Users/Amjad/Desktop/workfilie/hyperlink.html",
+		"/C/Users/Amjad/Desktop/workfilie/table format.html",
+		"/C/Users/Amjad/Desktop/workfilie/syllabus of bsc.cs.html",
+		"/C/Users/Amjad/Desktop/workfilie/computerscience department.html",
+		"/C/Users/Amjad/Desktop/workfilie/webpage of bca department.html",
+		"/C/Users/Amjad/Desktop/workfilie/webpage of ca.html",
+		"/C/Users/Amjad/Desktop/anshabb.html",
+		"/C/Users/Amjad/Documents/ansh.html",
+		"/C/Users/Amjad/AppData/Local/Microsoft/Windows/INetCache/IE/K49VV3AX/Hyperlink.html[1].htm",
+		"/C/Users/Amjad/AppData/Local/Microsoft/Windows/INetCache/IE/K49VV3AX/bca_syllabus[1].pdf",
+		"/C/Users/Amjad/Documents/AAA",
+		"/C/Users/Amjad/Documents/anshab.html",
+		"/C/Users/Amjad/Documents/my folder/Wi-Fi",
+		"/C/Users/Amjad/Documents/my folder/anshab.html",
+		"/C/Users/Amjad/Documents/my folder/style.css"
+	],
+	"find":
+	{
+		"height": 27.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 27.0
+	},
+	"input":
+	{
+		"height": 39.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "team.sublime-project",
+	"replace":
+	{
+		"height": 50.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 243.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
